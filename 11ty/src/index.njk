@@ -1,0 +1,63 @@
+---
+layout: layouts/skeleton.njk
+title: This is FuryBSD
+---
+
+
+<div class="parallax-wrapper col-lg">
+  <div class="parallax-img col-lg"> </div>
+  <div class="parallax-txt col-lg">
+    <h4 class="font-special">The Ultimate FreeBSD Desktop Installer</h4>
+    <div class="copy">
+      FuryBSD is a brand new, open source FreeBSD desktop. FuryBSD pays homage to desktop BSD projects of the past like PC-BSD and TrueOS with its graphical interface and adds additional tools like a live, hybrid USB / DVD image. FuryBSD is completely free to use and distributed under the BSD license.
+    </div>
+
+    <div class="icons-wrapper">
+      <div class="caption">
+        Available Desktop Environments
+      </div>
+      <div class="icons">
+        {% include "icons/kde.html" %}
+        {% include "icons/xfce.html" %}
+      </div>
+      <div class="hint">* For ARM or i386 (32bit) Systems, visit our <a href="#">Downloads Page</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2 class="title col-lg">Why Choose FuryBSD</h2>
+  <div class="row">
+
+    <div class="well col-lg-4">
+      <div class="box">
+        <div class="icon">{% include "icons/freebsd.html" %}</div>
+        <h2>Based on FreeBSD</h3>
+        <div class="copy">
+        FuryBSD is entirely based on the legendary stability of FreeBSD. We add a graphical desktop experience out of the box, allowing you to get started more quickly with FreeBSD.
+        </div>
+      </div>
+    </div>
+
+    <div class="well col-lg-4">
+      <div class="box">
+        <div class="icon">{% include "icons/source-branch-sync.html" %}</div>
+        <h2>Synchronization</h3>
+        <div class="copy">
+        FuryBSD works to stay in sync with upstream FreeBSD, meaning we use the powerful tools already present in FreeBSD to manage install and upgrades and avoid tunables unless absolutely necessary.
+        </div>
+      </div>
+    </div>
+
+    <div class="well col-lg-4">
+      <div class="box">
+        <div class="icon">{% include "icons/file-send.html" %}</div>
+        <h2>Portable</h3>
+        <div class="copy">
+        FuryBSD is compact using a hybrid live DVD / USB image. This lets you use FuryBSD on-the-fly as a portable OS for sensitive work,  a way to test your hardware, or to perform a hardware install directly from the live image.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

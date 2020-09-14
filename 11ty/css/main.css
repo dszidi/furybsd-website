@@ -1,0 +1,181 @@
+:root {
+  --default-txt: #efefef;
+  --default-bg: #333;
+  --primary: cyan;
+}
+
+html{
+  background-color: var(--default-bg);
+}
+
+body{
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 300;
+  background-color: var(--default-bg);
+  color: var(--default-txt);
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: var(--default-txt);
+}
+
+.hint{
+  font-size: smaller;
+  opacity: 0.85;
+}
+
+.hint a{
+  color: var(--primary);
+}
+
+.section{
+  text-align: center;
+  padding:24px 0 48px;
+}
+
+.section .title{
+  margin: 24px;
+}
+
+.section .well{
+  padding: 0 64px;
+}
+
+.section .well .copy{
+  text-align: left;
+}
+
+.font-default{
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 16px;
+}
+
+.font-special{
+  font-family: Dosis, arial, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.topbar{
+  position: fixed;
+  width: 100vw;
+  background:linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0) 100%);
+  z-index: 2;
+  top: 0;
+}
+
+.topbar .logo{ padding-left: 8px;}
+
+.topbar .logo a{
+  display: block;
+  margin: 8px;
+  background-image:url('https://www.furybsd.org/wp-content/uploads/2019/10/logo_transparent_background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: calc(100% - 16px);
+  max-width: 44px;
+}
+
+.nav-menu{
+  position: relative;
+  right: 0;
+  text-align: right;
+}
+
+.nav-menu ul{
+  display: block;
+}
+
+.nav-menu li{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 16px;
+}
+
+.nav-menu li a{
+  color: var(--default-txt);
+  text-decoration: none;
+}
+
+.parallax-wrapper{
+  background: radial-gradient(black, transparent);
+  padding-top: 54px;
+  min-height: 600px;
+}
+
+.parallax-img{
+  background-image: url('/img/screen_ui_1280w.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 33%;
+  background-position-y: 50%;
+  width: 60vw;
+  height: 80vh;
+}
+
+.parallax-txt{
+  position:absolute;
+  width: 34vw;
+  height: 300px;
+  top:calc(50% - 300px);
+  left: 63vw;
+}
+
+.parallax-txt h4{
+  margin-top: 0;
+}
+
+.parallax-txt .copy{
+  opacity: 0.75;
+}
+
+.parallax-txt .icons-wrapper .caption{
+  font-size: smallest;
+  opacity:0.6;
+}
+
+.parallax-txt .icons-wrapper {
+  margin-top: 64px;
+}
+
+.parallax-txt .icons {
+  margin:16px 0;
+}
+
+.parallax-txt .icons svg{
+  width: 96px;
+  margin:16px;
+  padding: 16px;
+  fill: var(--default-txt);
+  border: solid 1px rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+
+.parallax-txt .icons svg:first-child{
+  margin-left: unset;
+}
+
+.well{
+  text-align: center;
+}
+
+.well .icon svg{
+  width: 64px;
+  height: 64px;
+  opacity: 0.75;
+  fill: var(--default-txt);
+}
+
+.well .icon {
+  background: #000;
+  border-radius: 50%;
+  padding: 16px 16px 8px;
+  width: 64px;
+  margin: 0 auto;
+}
+
