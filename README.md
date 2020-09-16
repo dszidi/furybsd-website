@@ -1,1 +1,22 @@
 # furybsd-website
+
+A new web site for FuryBSD.org made via a static site generator. The generator used is called 11ty. The decision to use 11ty was based on a few factors
+
+- I spend 90% of my time with JS
+- There are tons of web developers out there making it the lowest barrier to entry for contributors
+- Even though it is JS it is not tied to any JS framework like React or Angular
+
+For more information visit 11ty.dev
+
+While 11ty understands pretty much anything (html, markdown, Nunjuk, JSLT etc) the only edits we'll be accepting for contributions are njk for the templates and html/markdown for content entries.
+
+## Installation
+
+- You will need Node and NPM installed on the machine
+- Install 11ty with npm install --save-dev @11ty/eleventy
+
+## Development Workflow
+- put your source files in the src directory
+- Run the ./make script from the root directory
+- Go to localhost:8081 to view the site
+- Generated files are in the dist directory
