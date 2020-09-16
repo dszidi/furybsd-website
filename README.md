@@ -13,7 +13,7 @@ While 11ty understands pretty much anything (html, markdown, Nunjuk, JSLT etc) t
 ## Installation
 
 - You will need Node and NPM installed on the machine
-- Install 11ty with npm install --save-dev @11ty/eleventy
+- Run npm install
 
 ## Development Workflow
 - put your source files in the src directory
