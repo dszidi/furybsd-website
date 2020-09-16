@@ -20,3 +20,16 @@ While 11ty understands pretty much anything (html, markdown, Nunjuk, JSLT etc) t
 - Run the ./make script from the root directory
 - Go to localhost:8081 to view the site
 - Generated files are in the dist directory
+
+## Project Status
+The site is still currently a WIP. Below is a to do list to help illustrate the state of progress
+
+- Add blog summary on landing page
+- Update Hyperlinks on Navigation
+- Add CSS to make landing page responsive 
+- Add Blog template
+- Add Blog content
+- Add any additional content
+- Design a better logo image for top right "Home" link
+- Create footer with social media links
+- Update Screenshots with images from newer releases
