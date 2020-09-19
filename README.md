@@ -16,7 +16,7 @@ While 11ty understands pretty much anything (html, markdown, Nunjuk, JSLT etc) t
 - Run npm install
 
 ## Development Workflow
-- put your source files in the 11ty/src directory
+- put your source files in the 11ty/src directory (11ty/src/posts for blog posts)
 - Run the ./make script from the root directory (./11ty/make)
 - Go to localhost:8081 to view the site
 - Generated files are in the 11ty/dist directory
