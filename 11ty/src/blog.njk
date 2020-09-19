@@ -1,0 +1,12 @@
+---
+layout: layouts/skeleton.njk
+title: FuryBSD Blog Home
+---
+
+<div class="col-lg">
+  <ul>
+    {%- for post in collections.post -%}
+    <li><a href="/posts/{{post.data.url}}">{{ post.data.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+</div>

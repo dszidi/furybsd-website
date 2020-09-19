@@ -1,8 +1,10 @@
 :root {
   --default-txt: #efefef;
+  --header-txt-weight: 400;
   --default-bg: #333;
   --primary: cyan;
-  --lines: #333;
+  --lines: #444;
+  --borderline: solid 1px var(--lines);
 }
 
 html{
@@ -18,9 +20,21 @@ body{
   padding: 0;
 }
 
+h2,h3,h4,h5,h6{
+  font-weight: var(--header-txt-weight);
+}
+
+h1,strong{
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: square;
+}
+
 a{
   text-decoration: none;
-  color: var(--default-txt);
+  color: var(--primary);
 }
 
 .hint{
@@ -64,7 +78,6 @@ a{
 .topbar{
   position: fixed;
   width: 100vw;
-  /*background:linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0) 100%);*/
   z-index: 2;
   top: 0;
 }
@@ -74,10 +87,9 @@ html:[data-scroll='0'] .topbar{
 }
 
 html:not([data-scroll='0']) .topbar{
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.1);
   border-bottom: solid 1px var(--lines);
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(16px);
 }
 
 .topbar .logo{ padding-left: 8px;}
@@ -114,9 +126,14 @@ html:not([data-scroll='0']) .topbar{
   text-decoration: none;
 }
 
+.content-container{
+  padding-top:56px;
+}
+
+/* FRONT PAGE */
 .parallax-wrapper{
   background: radial-gradient(black, transparent);
-  padding-top: 54px;
+  padding-top: 24px;
   min-height: 600px;
 }
 
@@ -191,3 +208,64 @@ html:not([data-scroll='0']) .topbar{
   margin: 0 auto;
 }
 
+/* BLOG PAGES */
+
+
+.content-container.blog{
+  padding-top:56px;
+  max-width:1024px;
+  margin: 0 auto;
+}
+
+.blog .blog-post-header {
+  margin-bottom: 32px;
+  border-bottom: var(--borderline);
+  padding-bottom: 24px;
+}
+
+.blog .blog-post-header .breadcrumbs{
+  font-size:smaller;
+  text-transform: uppercase;
+}
+
+.blog .blog-post-header .blog-title{
+  margin:4px 0;
+}
+
+.blog .blog-post-header .blog-metadata{
+  font-size:small;
+  opacity: 0.85;
+}
+
+.blog .blog-post-header .blog-image{
+  margin: 24px 0;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.blog .blog-post-header .blog-metadata span.strong{
+  opacity: 1;
+  font-weight: 600;
+}
+.blog .blog-post-header .blog-image img{
+  width: 100%;
+}
+
+.sidenav-block{
+  font-size: smaller;
+  padding: 0 32px 32px; 
+  min-height:calc(100vh - 64px);
+}
+
+.sidenav-block .blognav-menu {
+  padding: 0;
+}
+
+.sidenav-block .blognav-menu ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidenav-block .blognav-menu li{
+  margin: 8px 0;
+}

@@ -1,0 +1,7 @@
+<div class="blognav-menu col-lg">
+  <ul>
+    {%- for post in collections.post -%}
+      <li><a href="/posts/{{post.data.url}}">{{ post.data.title }}</li>
+    {%- endfor -%}
+  </ul>
+</div>

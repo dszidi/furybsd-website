@@ -1,5 +1,5 @@
 ---
-page_title: FuryBSD – Desktop powered by FreeBSD
+page_title: FuryBSD Blog
 ---
 
 <!DOCTYPE html>
@@ -7,14 +7,34 @@ page_title: FuryBSD – Desktop powered by FreeBSD
   <head>
     <title>{{ page_title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans:ital,wght@0,300,400500,600,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans:ital,wght@0,300,400,500,600,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   
-  <body class="{{ page_title }}">
+  <body class="blog">
     {% include "layouts/navigation.njk" %}
-    <div class="content-container">{{ content | safe }} </div>
+    <div class="content-container blog row">
+
+      <div class="content col-lg-8"> 
+        <div class="blog-post-header">
+          <div class="breadcrumbs"><a href="/blog">Blog</a></div>
+          <h1 class="blog-title font-special">{{title}}</h1>
+          <div class="blog-metadata">Published <span class="strong">{{published}}</span> by <span class="strong">{{author}}</span></div>
+
+          {% if (image) %}
+            <div class="blog-image"><img src="{{image}}" alt="Blog post image"/></div>
+            {% endif %}
+        </div>
+        <div class="blog-post">{{ content | safe }}</div>
+      </div>
+
+      <div class="sidenav-block col-lg-4">
+        <h3>Recent Blog Posts</h3>
+        {% include "layouts/blognav.njk" %}
+      </div>
+
+    </div>
   </body>
 
   <script>
