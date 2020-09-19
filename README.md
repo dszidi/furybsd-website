@@ -24,11 +24,11 @@ While 11ty understands pretty much anything (html, markdown, Nunjuk, JSLT etc) t
 ## Project Status
 The site is still currently a WIP. Below is a to do list to help illustrate the state of progress
 
-- Add blog summary on landing page
+- Add blog summary on landing page -- STARTED
 - Update Hyperlinks on Navigation
 - Add CSS to make landing page responsive 
-- Add Blog template
-- Add Blog content
+- Add Blog template -- DONE!
+- Add Blog content -- STARTED (1/9 posts ported)
 - Add any additional content
 - Design a better logo image for top right "Home" link
 - Create footer with social media links
