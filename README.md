@@ -33,3 +33,5 @@ The site is still currently a WIP. Below is a to do list to help illustrate the 
 - Design a better logo image for top right "Home" link
 - Create footer with social media links
 - Update Screenshots with images from newer releases
+
+## For help with markdown check out the [markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)
