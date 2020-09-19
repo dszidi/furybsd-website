@@ -16,10 +16,10 @@ While 11ty understands pretty much anything (html, markdown, Nunjuk, JSLT etc) t
 - Run npm install
 
 ## Development Workflow
-- put your source files in the src directory
-- Run the ./make script from the root directory
+- put your source files in the 11ty/src directory
+- Run the ./make script from the root directory (./11ty/make)
 - Go to localhost:8081 to view the site
-- Generated files are in the dist directory
+- Generated files are in the 11ty/dist directory
 
 ## Project Status
 The site is still currently a WIP. Below is a to do list to help illustrate the state of progress
