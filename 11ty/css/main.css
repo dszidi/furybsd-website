@@ -132,9 +132,27 @@ html:not([data-scroll='0']) .topbar{
 }
 
 .page-footer{
-  padding: 16px 150px 16px 16px;
-  min-height: 300px;
+  padding: 16px;
+  min-height: 200px;
   background-color: #242424;
+  text-align: center;
+}
+
+.page-footer-content{
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.page-footer-content > div {
+  display:inline-block;
+  margin: 0 8px;
+}
+
+.page-footer-content svg {
+  width: 36px;
+  height: 36px;
+  fill: var(--lines);
 }
 
 /* FRONT PAGE */
