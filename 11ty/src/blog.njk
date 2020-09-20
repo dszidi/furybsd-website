@@ -1,12 +1,30 @@
 ---
-layout: layouts/skeleton.njk
+layout: layouts/blogpost.njk
 title: FuryBSD Blog Home
+eleventyExcludeFromCollections: true
+collectionType: teaser
 ---
 
 <div class="col-lg">
-  <ul>
-    {%- for post in collections.post -%}
-    <li><a href="/posts/{{post.data.url}}">{{ post.data.title }}</a></li>
-    {%- endfor -%}
-  </ul>
+  
+  {%- for post in collections.post -%}
+    
+    <div class="blog-teaser">
+      <!--<div class="breadcrumbs"><a href="/blog">Blog</a></div>-->
+      <h3 class="blog-title "><a href="/posts/{{post.data.url}}" alt="link to {{post.data.title}}">{{post.data.title}}</a></h3>
+      <div class="blog-metadata">Published <span class="strong">{{post.data.published}}</span> by <span class="strong">{{post.data.author}}</span></div>
+    
+      {% if (post.data.image) %}
+        <div class="blog-image" style="background-image:url('{{post.data.image}}');" ><img style="display:none" src="{{post.data.image}}" alt="Blog post image"/></div>
+      {% else %}
+        <div class="blog-image" style="background-image:url('../img/kde.png');"><img style="display: none;" src="../img/kde.png" alt="Blog post image"/></div>
+      {% endif %}
+      <div class="blog-footer"> 
+      (social media share buttons go here)
+      </div>
+      
+    </div>           
+   
+  {%- endfor -%}
+ 
 </div>

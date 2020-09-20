@@ -1,0 +1,12 @@
+<div class="blog-post-header">
+  <div class="breadcrumbs"><a href="/blog">Blog</a></div>
+  <h1 class="blog-title font-special">{{title}}</h1>
+  <div class="blog-metadata">Published <span class="strong">{{published}}</span> by <span class="strong">{{author}}</span></div>
+
+  {% if (image) %}
+    <div class="blog-image"><img src="{{image}}" alt="Blog post image"/></div>
+  {% else %}
+    <div class="blog-image"><img src="../../img/kde.png" alt="Blog post image"/></div>
+  {% endif %}
+  <div class="blog-footer">(social media share buttons go here)</div>
+</div>           

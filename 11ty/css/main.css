@@ -80,10 +80,10 @@ a{
   width: 100vw;
   z-index: 2;
   top: 0;
+  background-color: #242424;
 }
 
 html:[data-scroll='0'] .topbar{
-  background: none;
 }
 
 html:not([data-scroll='0']) .topbar{
@@ -128,6 +128,13 @@ html:not([data-scroll='0']) .topbar{
 
 .content-container{
   padding-top:56px;
+  padding-bottom:56px;
+}
+
+.page-footer{
+  padding: 16px 150px 16px 16px;
+  min-height: 300px;
+  background-color: #242424;
 }
 
 /* FRONT PAGE */
@@ -209,7 +216,9 @@ html:not([data-scroll='0']) .topbar{
 }
 
 /* BLOG PAGES */
-
+body.blog .content-container{
+  margin-top: 16px;
+}
 
 .content-container.blog{
   padding-top:56px;
@@ -232,24 +241,56 @@ html:not([data-scroll='0']) .topbar{
   margin:4px 0;
 }
 
+.blog .blog-teaser .blog-metadata,
 .blog .blog-post-header .blog-metadata{
   font-size:small;
   opacity: 0.85;
 }
 
+.blog .blog-teaser .blog-image,
 .blog .blog-post-header .blog-image{
-  margin: 24px 0;
+  margin: 24px 0 0;
+  width: 100%;
+  height: 300px;
   max-height: 400px;
   overflow: hidden;
+  background-color: rgba(0,0,0,0.25);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
-.blog .blog-post-header .blog-metadata span.strong{
+.blog .blog-metadata span.strong{
   opacity: 1;
   font-weight: 600;
 }
 .blog .blog-post-header .blog-image img{
   width: 100%;
 }
+
+
+/* Blog Landing Page (Teasers) */
+.blog .blog-teaser .blog-title{
+  margin: 8px 0;
+}
+
+.blog .blog-teaser .blog-image{
+  margin: 8px 0 0;
+}
+
+.blog .blog-footer{
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.5);
+  text-align: right;
+}
+
+.blog .blog-teaser{
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: var(--borderline);
+}
+
+/* Blog Sidenav */
 
 .sidenav-block{
   font-size: smaller;
