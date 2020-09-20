@@ -25,13 +25,13 @@ While 11ty understands pretty much anything (html, markdown, Nunjuk, JSLT etc) t
 The site is still currently a WIP. Below is a to do list to help illustrate the state of progress
 
 - Add blog summary on landing page -- STARTED
-- Update Hyperlinks on Navigation
+- Update Hyperlinks on Navigation -- STARTED
 - Add CSS to make landing page responsive 
 - Add Blog template -- DONE!
 - Add Blog content -- STARTED (1/9 posts ported)
 - Add any additional content
 - Design a better logo image for top right "Home" link
-- Create footer with social media links
+- Create footer with social media links --Started
 - Update Screenshots with images from newer releases
 
 ## For help with markdown check out the [markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)
