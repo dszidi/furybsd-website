@@ -14,7 +14,8 @@ task:
   only_if: $CIRRUS_TAG != 'continuous'
 
   install_script:
-    - pkg install -y pkg node npm # qemu-devel uefi-edk2-qemu-x86_64
+    - env
+    - pkg install -y pkg node npm
     
   test_script:
     - npm install
