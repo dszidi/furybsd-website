@@ -1,0 +1,25 @@
+freebsd_instance:
+  image: freebsd-12-1-release-amd64
+  # cpu: 1 gives an error; >2 works
+  cpu: 2
+  memory: 8G
+
+env:
+  CIRRUS_CLONE_DEPTH: 1
+  GITHUB_TOKEN: ENCRYPTED[!6358ad7cf25f119ecab48a7beffc4287775a9c0af95cf1149ae554a39ec9b4156bff82c2f6a2876a198938c6fabfbdd8!]
+
+task:
+  stateful: false
+  timeout_in: 60m
+  only_if: $CIRRUS_TAG != 'continuous'
+
+  install_script:
+    - pkg install -y pkg node npm # qemu-devel uefi-edk2-qemu-x86_64
+    
+  test_script:
+    - npm install
+    - cd 11ty && ./make "${DESKTOP}" || true
+    - mkdir -p "${CIRRUS_WORKING_DIR}"/artifacts/dist
+    - cp -R dist/ "${CIRRUS_WORKING_DIR}"/artifacts/dist
+    - ls -lh "${CIRRUS_WORKING_DIR}"/artifacts/
+    - ls -lh "${CIRRUS_WORKING_DIR}"/artifacts/dist/
