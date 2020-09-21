@@ -19,7 +19,7 @@ task:
     
   test_script:
     - npm install
-    - cd 11ty && ./make "${DESKTOP}" || true
+    - cd 11ty && npx @11ty/eleventy "${DESKTOP}" || true
     - mkdir -p "${CIRRUS_WORKING_DIR}"/artifacts/dist
     - cp -R dist/ "${CIRRUS_WORKING_DIR}"/artifacts/dist
     - ls -lh "${CIRRUS_WORKING_DIR}"/artifacts/
